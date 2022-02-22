@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-if ! command -v pass; then
+if ! command -v pass >/dev/null; then
 	echo "install pass"
 	exit 1
 fi
-if ! command -v gpg; then
+if ! command -v gpg >/dev/null; then
 	echo "install gpg"
 	exit 1
 fi
