@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "enum": [
+                "./keyholders.schema.json"
+            ]
+        }
+    },
+    "additionalProperties": {
+        "type": "object",
+        "properties": {
+            "email": {
+                "type": "string"
+            },
+            "signedContract": {
+                "if": {
+                    "type": "string"
+                },
+                "else": {
+                    "type": "null"
+                }
+            },
+            "sshKeys": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "rfidTokens": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "hasPhysicalKey": {
+                "type": "boolean"
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "email"
+        ]
+    },
+    "definitions": {
+    }
+}
