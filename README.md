@@ -5,6 +5,7 @@
 - pass
 - gpg
 - yq-go
+- yajsv (optional, for schema validation)
 
 ## Editing the keyholders file
 
