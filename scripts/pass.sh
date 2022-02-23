@@ -9,7 +9,7 @@ if ! command -v gpg >/dev/null; then
 	exit 1
 fi
 
-cd $(dirname $0)
+cd $(dirname $0)/..
 
 for key in .gpg-public-keys/*
 do
