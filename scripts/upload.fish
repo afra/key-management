@@ -2,9 +2,9 @@
 
 cd (dirname (status filename))/..
 
-scp root@door:/home/open/.ssh/authorized_keys (./scripts/sshKeys.fish | psub)
+scp (./scripts/sshKeys.fish | psub) root@door:/home/open/.ssh/authorized_keys
 
-scp root@door:/home/close/.ssh/authorized_keys (./scripts/sshKeys.fish | psub)
+scp (./scripts/sshKeys.fish | psub) root@door:/home/close/.ssh/authorized_keys
 
-scp root@door:/home/open/rfid_codes.txt  (./scripts/rfidTokens.fish | psub)
+scp (./scripts/rfidTokens.fish | psub) root@door:/home/open/rfid_codes.txt
 
