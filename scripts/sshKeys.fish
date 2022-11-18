@@ -7,5 +7,4 @@ end
 
 cd (dirname (status filename))/..
 
-./scripts/pass.sh old/authorized_keys
 ./scripts/pass.sh  keyholders.yaml | yq 'map(.sshKeys[]?+" "+key)' | yq '.[]'
