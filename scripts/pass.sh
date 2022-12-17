@@ -13,7 +13,6 @@ cd $(dirname $0)/..
 
 for key in .gpg-public-keys/*
 do
-	echo $key
 	gpg --import "$key" 2>/dev/null
 done
 
