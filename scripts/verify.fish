@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-if ! command -v yajsv >/dev/null; then
+if ! command -v yajsv >/dev/null;
 	echo "install yajsv"
 	exit 1
 end

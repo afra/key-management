@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-if ! command -v yq >/dev/null; then
+if ! command -v yq >/dev/null;
 	echo "install go-yq"
 	exit 1
 end
