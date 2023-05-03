@@ -1,4 +1,4 @@
-with import (fetchTarball https://github.com/nixos/nixpkgs/archive/b6966d911da89e5a7301aaef8b4f0a44c77e103c.tar.gz) {};
+with import (fetchTarball https://github.com/nixos/nixpkgs/archive/1a411f23ba299db155a5b45d5e145b85a7aafc42.tar.gz) {};
 
 mkShell {
   name = "key-management-shell";
